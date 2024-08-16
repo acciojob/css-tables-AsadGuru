@@ -1,16 +1,75 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        table {
+            border-collapse: separate; /* Allows border-radius to be applied correctly */
+            border-spacing: 0; /* Ensures that there is no spacing between cells */
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: left;
+            padding: 0.5rem;
+            /* Ensure the padding is consistent for table cells */
+        }
+
+        th {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        tbody tr:nth-child(odd) td {
+            background-color: #f2f2f2; /* Background color for odd rows */
+        }
+
+        tbody tr:nth-child(even) td {
+            background-color: #ffffff; /* Background color for even rows */
+        }
+
+        tr:hover td {
+            background-color: #e0e0e0; /* Light gray background on hover */
+        }
+
+        .table-container {
+            margin-bottom: 2rem; /* Space below the table container */
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Table - Header 1</th>
+                    <th>Table - Header 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                </tr>
+                <tr>
+                    <td>Cell 4</td>
+                    <td>Cell 5</td>
+                </tr>
+                <tr>
+                    <td>Cell 7</td>
+                    <td>Cell 8</td>
+                </tr>
+                <tr>
+                    <td>Cell 9</td>
+                    <td>Cell 10</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
